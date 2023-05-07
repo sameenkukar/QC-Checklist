@@ -2,268 +2,452 @@
 <script src="https://cdn02.jotfor.ms/static/jotform.forms.js?3.3.41574" type="text/javascript"></script>
 <script src="https://cdn03.jotfor.ms/js/payments/validategateways.js?v=3.3.41574" type="text/javascript"></script>
 <script src="https://js.jotform.com/vendor/postMessage.js?3.3.41574" type="text/javascript"></script>
-<script src="https://cdn01.jotfor.ms/s/umd/037e6bcdbdf/for-widgets-server.js?v=3.3.41574" type="text/javascript"></script>
+<script src="https://cdn01.jotfor.ms/s/umd/037e6bcdbdf/for-widgets-server.js?v=3.3.41574"
+    type="text/javascript"></script>
 <script type="text/javascript">	JotForm.newDefaultTheme = true;
-	JotForm.extendsNewTheme = false;
-	JotForm.singleProduct = false;
-	JotForm.newPaymentUIForNewCreatedForms = true;
-	JotForm.newPaymentUI = true;
-	JotForm.clearFieldOnHide="disable";
-	JotForm.submitError="jumpToFirstError";
+    JotForm.extendsNewTheme = false;
+    JotForm.singleProduct = false;
+    JotForm.newPaymentUIForNewCreatedForms = false;
+    JotForm.newPaymentUI = true;
+    JotForm.clearFieldOnHide = "disable";
+    JotForm.submitError = "jumpToFirstError";
 
-	JotForm.init(function(){
-	/*INIT-START*/
-      JotForm.alterTexts(undefined);
-	/*INIT-END*/
-	});
+    JotForm.init(function () {
+        /*INIT-START*/
+        JotForm.alterTexts({ "ageVerificationError": "You must be older than {minAge} years old to submit this form.", "alphabetic": "This field can only contain letters", "alphanumeric": "This field can only contain letters and numbers.", "appointmentSelected": "You’ve selected {time} on {date}", "ccDonationMinLimitError": "Minimum amount is {minAmount} {currency}", "ccInvalidCVC": "CVC number is invalid.", "ccInvalidExpireDate": "Expire date is invalid.", "ccInvalidNumber": "Credit Card Number is invalid.", "ccMissingDetails": "Please fill up the Credit Card details.", "ccMissingDonation": "Please enter numeric values for donation amount.", "ccMissingProduct": "Please select at least one product.", "characterLimitError": "Too many Characters.  The limit is", "characterMinLimitError": "Too few characters. The minimum is", "chooseAFile_infoMessage": "Choose a file", "confirmClearForm": "Are you sure you want to clear the form?", "confirmEmail": "E-mail does not match", "currency": "This field can only contain currency values.", "cyrillic": "This field can only contain cyrillic characters", "dateInvalid": "This date is not valid. The date format is {format}", "dateInvalidSeparate": "This date is not valid. Enter a valid {element}.", "dateLimited": "This date is unavailable.", "disallowDecimals": "Please enter a whole number.", "doneButton": "Done", "doneMessage": "Well done! All errors are fixed.", "dragAndDropFilesHere_infoMessage": "Drag and drop files here", "email": "Enter a valid e-mail address", "error": "Error", "fieldError": "field has an error.", "fillMask": "Field value must fill mask.", "freeEmailError": "Free email accounts are not allowed", "generalError": "There are errors on the form. Please fix them before continuing.", "generalPageError": "There are errors on this page. Please fix them before continuing.", "gradingScoreError": "Score total should only be less than or equal to", "incompleteFields": "There are incomplete required fields. Please complete them.", "inputCarretErrorA": "Input should not be less than the minimum value:", "inputCarretErrorB": "Input should not be greater than the maximum value:", "justSoldOut": "Just Sold Out", "lessThan": "Your score should be less than or equal to", "maxDigitsError": "The maximum digits allowed is", "maxFileSize_infoMessage": "Max. file size", "maxSelectionsError": "The maximum number of selections allowed is ", "minCharactersError": "The number of characters should not be less than the minimum value:", "minSelectionsError": "The minimum required number of selections is ", "multipleError": "There are {count} errors on this page. Please correct them before moving on.", "multipleFileUploads_emptyError": "{file} is empty, please select files again without it.", "multipleFileUploads_fileLimitError": "Only {fileLimit} file uploads allowed.", "multipleFileUploads_minSizeError": "{file} is too small, minimum file size is {minSizeLimit}.", "multipleFileUploads_onLeave": "The files are being uploaded, if you leave now the upload will be cancelled.", "multipleFileUploads_sizeError": "{file} is too large, maximum file size is {sizeLimit}.", "multipleFileUploads_typeError": "{file} has invalid extension. Only {extensions} are allowed.", "nextButtonText": "Next", "noSlotsAvailable": "No slots available", "notEnoughStock": "Not enough stock for the current selection", "notEnoughStock_remainedItems": "Not enough stock for the current selection ({count} items left)", "numeric": "This field can only contain numeric values", "oneError": "There is {count} error on this page. Please correct it before moving on.", "pastDatesDisallowed": "Date must not be in the past.", "pleaseWait": "Please wait...", "prevButtonText": "Previous", "progressMiddleText": "of", "required": "This field is required.", "requiredLegend": "All fields marked with * are required and must be filled.", "requireEveryCell": "Every cell is required.", "requireEveryRow": "Every row is required.", "requireOne": "At least one field required.", "reviewBackText": "Back to Form", "reviewSubmitText": "Review and Submit", "seeAllText": "See All", "seeErrorsButton": "See Errors", "selectionSoldOut": "Selection Sold Out", "slotUnavailable": "{time} on {date} has been taken. Please select another slot.", "soldOut": "Sold Out", "startButtonText": "START", "submissionLimit": "Sorry! Only one entry is allowed. &lt;br&gt; Multiple submissions are disabled for this form.", "submitButtonText": "Submit", "subProductItemsLeft": "({count} items left)", "uploadExtensions": "You can only upload following files:", "uploadFilesize": "File size cannot be bigger than:", "uploadFilesizemin": "File size cannot be smaller than:", "url": "This field can only contain a valid URL", "validateEmail": "You need to validate this e-mail", "wordLimitError": "Too many words. The limit is", "wordMinLimitError": "Too few words.  The minimum is" });
+        /*INIT-END*/
+    });
 
-   JotForm.prepareCalculationsOnTheFly([null,{"name":"qcChecklist","qid":"1","text":"QC Checklist","type":"control_head"},{"name":"submit2","qid":"2","text":"Submit","type":"control_button"},null,null,null,null,null,null,null,{"name":"typeA","qid":"10","text":"Signature","type":"control_widget"},null,null,null,{"name":"measurement","qid":"14","text":"Measurement","type":"control_widget"},{"description":"","name":"size","qid":"15","subLabel":"","text":"Size","type":"control_dropdown"},{"name":"styleNo","qid":"16","text":"STYLE NO.","type":"control_widget"},{"name":"poNo","qid":"17","text":"PO NO.","type":"control_widget"},{"name":"buyerName","qid":"18","text":"BUYER NAME","type":"control_widget"}]);
-   setTimeout(function() {
-JotForm.paymentExtrasOnTheFly([null,{"name":"qcChecklist","qid":"1","text":"QC Checklist","type":"control_head"},{"name":"submit2","qid":"2","text":"Submit","type":"control_button"},null,null,null,null,null,null,null,{"name":"typeA","qid":"10","text":"Signature","type":"control_widget"},null,null,null,{"name":"measurement","qid":"14","text":"Measurement","type":"control_widget"},{"description":"","name":"size","qid":"15","subLabel":"","text":"Size","type":"control_dropdown"},{"name":"styleNo","qid":"16","text":"STYLE NO.","type":"control_widget"},{"name":"poNo","qid":"17","text":"PO NO.","type":"control_widget"},{"name":"buyerName","qid":"18","text":"BUYER NAME","type":"control_widget"}]);}, 20); 
+    JotForm.prepareCalculationsOnTheFly([null, { "name": "qcChecklist", "qid": "1", "text": "QC Checklist", "type": "control_head" }, { "name": "submit2", "qid": "2", "text": "Submit", "type": "control_button" }, null, null, null, null, null, null, null, { "name": "typeA", "qid": "10", "text": "Signature", "type": "control_widget" }, null, null, null, { "name": "measurement", "qid": "14", "text": "Measurement", "type": "control_widget" }, { "description": "", "name": "size", "qid": "15", "subLabel": "", "text": "Size", "type": "control_dropdown" }, { "name": "styleNo", "qid": "16", "text": "STYLE NO.", "type": "control_widget" }, { "name": "poNo", "qid": "17", "text": "PO NO.", "type": "control_widget" }, { "name": "buyerName", "qid": "18", "text": "BUYER NAME", "type": "control_widget" }]);
+    setTimeout(function () {
+        JotForm.paymentExtrasOnTheFly([null, { "name": "qcChecklist", "qid": "1", "text": "QC Checklist", "type": "control_head" }, { "name": "submit2", "qid": "2", "text": "Submit", "type": "control_button" }, null, null, null, null, null, null, null, { "name": "typeA", "qid": "10", "text": "Signature", "type": "control_widget" }, null, null, null, { "name": "measurement", "qid": "14", "text": "Measurement", "type": "control_widget" }, { "description": "", "name": "size", "qid": "15", "subLabel": "", "text": "Size", "type": "control_dropdown" }, { "name": "styleNo", "qid": "16", "text": "STYLE NO.", "type": "control_widget" }, { "name": "poNo", "qid": "17", "text": "PO NO.", "type": "control_widget" }, { "name": "buyerName", "qid": "18", "text": "BUYER NAME", "type": "control_widget" }]);
+    }, 20); 
 </script>
-<style type="text/css">@media print{.form-section{display:inline!important}.form-pagebreak{display:none!important}.form-section-closed{height:auto!important}.page-section{position:initial!important}}</style>
-<link type="text/css" rel="stylesheet" href="https://cdn01.jotfor.ms/themes/CSS/5e6b428acc8c4e222d1beb91.css?v=3.3.41574"/>
-<link type="text/css" rel="stylesheet" href="https://cdn02.jotfor.ms/css/styles/payment/payment_styles.css?3.3.41574" />
-<link type="text/css" rel="stylesheet" href="https://cdn03.jotfor.ms/css/styles/payment/payment_feature.css?3.3.41574" />
-<form class="jotform-form" action="https://submit.jotform.com/submit/212661615374051" method="post" name="form_212661615374051" id="212661615374051" accept-charset="utf-8" autocomplete="on"><input type="hidden" name="formID" value="212661615374051" /><input type="hidden" id="JWTContainer" value="" /><input type="hidden" id="cardinalOrderNumber" value="" />
-  <div role="main" class="form-all">
-    <ul class="form-section page-section">
-      <li id="cid_1" class="form-input-wide" data-type="control_head">
-        <div class="form-header-group  header-large">
-          <div class="header-text httal htvam">
-            <h1 id="header_1" class="form-header" data-component="header">QC Checklist</h1>
-          </div>
-        </div>
-      </li>
-      <li class="form-line jf-required" data-type="control_widget" id="id_18"><label class="form-label form-label-top form-label-auto" id="label_18" for="input_18"> 
-	      
-	      
-	      
-	      
-	      NAME<span class="form-required">*</span> </label>
-        <div id="cid_18" class="form-input-wide jf-required" data-layout="full">
-          <div data-widget-name="Dynamic Dropdowns" style="width:100%;text-align:Left;overflow-x:auto" data-component="widget-field"><iframe data-client-id="53201a2d6866be393e000028" title="Dynamic Dropdowns" frameBorder="0" scrolling="no" allowtransparency="true" allow="geolocation; microphone; camera; autoplay; encrypted-media; fullscreen" data-type="iframe" class="custom-field-frame" id="customFieldFrame_18" src="" style="max-width:400px;border:none;width:100%;height:50px" data-width="400" data-height="50"></iframe>
-            <div class="widget-inputs-wrapper"><input type="hidden" id="input_18" class="form-hidden form-widget widget-required " name="q18_buyerName" value="" /><input type="hidden" id="widget_settings_18" class="form-hidden form-widget-settings" value="%5B%5D" data-version="2" /></div>
-            <script type="text/javascript">
-              setTimeout(function()
-              {
-                var _cFieldFrame = document.getElementById("customFieldFrame_18");
-                if (_cFieldFrame)
-                {
-                  _cFieldFrame.onload = function()
-                  {
-                    if (typeof widgetFrameLoaded !== 'undefined')
-                    {
-                      widgetFrameLoaded(18,
-                      {
-                        "formID": 212661615374051
-                      })
-                    }
-                  };
-                  _cFieldFrame.src = "//app-widgets.jotform.io/dynamicDropdowns/?qid=18&ref=" +
-                    encodeURIComponent(window.location.protocol + "//" + window.location.host) + '' + '' + '' +
-                    '&injectCSS=' + encodeURIComponent(window.location.search.indexOf("ndt=1") > -1);
-                  _cFieldFrame.addClassName("custom-field-frame-rendered");
-                }
-              }, 0);
-            </script>
-          </div>
-        </div>
-      </li>
-      <li class="form-line jf-required" data-type="control_widget" id="id_17"><label class="form-label form-label-top form-label-auto" id="label_17" for="input_17"> PO NO.<span class="form-required">*</span> </label>
-        <div id="cid_17" class="form-input-wide jf-required" data-layout="full">
-          <div data-widget-name="Dynamic Dropdowns" style="width:100%;text-align:Left;overflow-x:auto" data-component="widget-field"><iframe data-client-id="53201a2d6866be393e000028" title="Dynamic Dropdowns" frameBorder="0" scrolling="no" allowtransparency="true" allow="geolocation; microphone; camera; autoplay; encrypted-media; fullscreen" data-type="iframe" class="custom-field-frame" id="customFieldFrame_17" src="" style="max-width:400px;border:none;width:100%;height:50px" data-width="400" data-height="50"></iframe>
-            <div class="widget-inputs-wrapper"><input type="hidden" id="input_17" class="form-hidden form-widget widget-required " name="q17_poNo" value="" /><input type="hidden" id="widget_settings_17" class="form-hidden form-widget-settings" value="%5B%5D" data-version="2" /></div>
-            <script type="text/javascript">
-              setTimeout(function()
-              {
-                var _cFieldFrame = document.getElementById("customFieldFrame_17");
-                if (_cFieldFrame)
-                {
-                  _cFieldFrame.onload = function()
-                  {
-                    if (typeof widgetFrameLoaded !== 'undefined')
-                    {
-                      widgetFrameLoaded(17,
-                      {
-                        "formID": 212661615374051
-                      })
-                    }
-                  };
-                  _cFieldFrame.src = "//app-widgets.jotform.io/dynamicDropdowns/?qid=17&ref=" +
-                    encodeURIComponent(window.location.protocol + "//" + window.location.host) + '' + '' + '' +
-                    '&injectCSS=' + encodeURIComponent(window.location.search.indexOf("ndt=1") > -1);
-                  _cFieldFrame.addClassName("custom-field-frame-rendered");
-                }
-              }, 0);
-            </script>
-          </div>
-        </div>
-      </li>
-      <li class="form-line jf-required" data-type="control_widget" id="id_16"><label class="form-label form-label-top form-label-auto" id="label_16" for="input_16"> STYLE NO.<span class="form-required">*</span> </label>
-        <div id="cid_16" class="form-input-wide jf-required" data-layout="full">
-          <div data-widget-name="Dynamic Dropdowns" style="width:100%;text-align:Left;overflow-x:auto" data-component="widget-field"><iframe data-client-id="53201a2d6866be393e000028" title="Dynamic Dropdowns" frameBorder="0" scrolling="no" allowtransparency="true" allow="geolocation; microphone; camera; autoplay; encrypted-media; fullscreen" data-type="iframe" class="custom-field-frame" id="customFieldFrame_16" src="" style="max-width:400px;border:none;width:100%;height:50px" data-width="400" data-height="50"></iframe>
-            <div class="widget-inputs-wrapper"><input type="hidden" id="input_16" class="form-hidden form-widget widget-required " name="q16_styleNo" value="" /><input type="hidden" id="widget_settings_16" class="form-hidden form-widget-settings" value="%5B%5D" data-version="2" /></div>
-            <script type="text/javascript">
-              setTimeout(function()
-              {
-                var _cFieldFrame = document.getElementById("customFieldFrame_16");
-                if (_cFieldFrame)
-                {
-                  _cFieldFrame.onload = function()
-                  {
-                    if (typeof widgetFrameLoaded !== 'undefined')
-                    {
-                      widgetFrameLoaded(16,
-                      {
-                        "formID": 212661615374051
-                      })
-                    }
-                  };
-                  _cFieldFrame.src = "//app-widgets.jotform.io/dynamicDropdowns/?qid=16&ref=" +
-                    encodeURIComponent(window.location.protocol + "//" + window.location.host) + '' + '' + '' +
-                    '&injectCSS=' + encodeURIComponent(window.location.search.indexOf("ndt=1") > -1);
-                  _cFieldFrame.addClassName("custom-field-frame-rendered");
-                }
-              }, 0);
-            </script>
-          </div>
-        </div>
-      </li>
-      <li class="form-line" data-type="control_dropdown" id="id_15"><label class="form-label form-label-top form-label-auto" id="label_15" for="input_15"> Size </label>
-        <div id="cid_15" class="form-input-wide" data-layout="half"> <select class="form-dropdown" id="input_15" name="q15_size" style="width:310px" data-component="dropdown" aria-label="Size">
-            <option value="">Please Select</option>
-            <option value="XS">XS</option>
-            <option value="S">S</option>
-            <option value="M">M</option>
-            <option value="L">L</option>
-            <option value="XL">XL</option>
-            <option value="2XL">2XL</option>
-            <option value="S/M">S/M</option>
-            <option value="L/XL">L/XL</option>
-            <option value="1X">1X</option>
-            <option value="2X">2X</option>
-            <option value="3X">3X</option>
-            <option value="4">4</option>
-            <option value="6">6</option>
-            <option value="8">8</option>
-            <option value="10">10</option>
-            <option value="12">12</option>
-          </select> </div>
-      </li>
-      <li class="form-line" data-type="control_widget" id="id_14"><label class="form-label form-label-top form-label-auto" id="label_14" for="input_14"> Measurement </label>
-        <div id="cid_14" class="form-input-wide" data-layout="full">
-          <div data-widget-name="Spreadsheet" style="width:100%;text-align:Left;overflow-x:auto" data-component="widget-field"><iframe data-client-id="5321bc1dec233a2e15000006" title="Spreadsheet" frameBorder="0" scrolling="no" allowtransparency="true" allow="geolocation; microphone; camera; autoplay; encrypted-media; fullscreen" data-type="iframe" class="custom-field-frame" id="customFieldFrame_14" src="" style="max-width:1000px;border:none;width:100%;height:300px" data-width="1000" data-height="300"></iframe>
-            <div class="widget-inputs-wrapper"><input type="hidden" id="input_14" class="form-hidden form-widget  " name="q14_measurement" value="" /><input type="hidden" id="widget_settings_14" class="form-hidden form-widget-settings" value="%5B%7B%22name%22%3A%22rowsNumber%22%2C%22value%22%3A%225%22%7D%2C%7B%22name%22%3A%22colsNumber%22%2C%22value%22%3A%225%22%7D%2C%7B%22name%22%3A%22columnNames%22%2C%22value%22%3A%22Measurement%20Type%5CnCM%20%2F%20INCH%5CnACTUAL%5CnREQUIRED%5CnDIFFERENCE%5Cn%22%7D%2C%7B%22name%22%3A%22defaultData%22%2C%22value%22%3A%22A1%20Hps%20to%20length%5CnA2%20Chest%5CnA3%20Waist%5CnA4%20Shoulder%5CnA5%20Sleeve%20length%5CnE1%20%3D%20D1-C1%5CnE2%20%3D%20D2-C2%5CnE3%20%3D%20D3-C3%5CnE4%20%3D%20D4-C4%5CnE5%20%3D%20D5-C5%5Cn%22%7D%5D" data-version="2" /></div>
-            <script type="text/javascript">
-              setTimeout(function()
-              {
-                var _cFieldFrame = document.getElementById("customFieldFrame_14");
-                if (_cFieldFrame)
-                {
-                  _cFieldFrame.onload = function()
-                  {
-                    if (typeof widgetFrameLoaded !== 'undefined')
-                    {
-                      widgetFrameLoaded(14,
-                      {
-                        "formID": 212661615374051
-                      })
-                    }
-                  };
-                  _cFieldFrame.src = "//app-widgets.jotform.io/spreadsheet/?qid=14&ref=" +
-                    encodeURIComponent(window.location.protocol + "//" + window.location.host) + '' + '' + '' +
-                    '&injectCSS=' + encodeURIComponent(window.location.search.indexOf("ndt=1") > -1);
-                  _cFieldFrame.addClassName("custom-field-frame-rendered");
-                }
-              }, 0);
-            </script>
-          </div>
-        </div>
-      </li>
-      <li class="form-line" data-type="control_widget" id="id_10"><label class="form-label form-label-top form-label-auto" id="label_10" for="input_10"> Signature </label>
-        <div id="cid_10" class="form-input-wide" data-layout="full">
-          <div data-widget-name="Smooth Signature" style="width:100%;text-align:Left;overflow-x:auto" data-component="widget-field"><iframe data-client-id="529467003477f3512000001f" title="Smooth Signature" frameBorder="0" scrolling="no" allowtransparency="true" allow="geolocation; microphone; camera; autoplay; encrypted-media; fullscreen" data-type="iframe" class="custom-field-frame" id="customFieldFrame_10" src="" style="max-width:310px;border:none;width:100%;height:114px" data-width="310" data-height="114"></iframe>
-            <div class="widget-inputs-wrapper"><input type="hidden" id="input_10" class="form-hidden form-widget  " name="q10_typeA" value="" /><input type="hidden" id="widget_settings_10" class="form-hidden form-widget-settings" value="%5B%5D" data-version="2" /></div>
-            <script type="text/javascript">
-              setTimeout(function()
-              {
-                var _cFieldFrame = document.getElementById("customFieldFrame_10");
-                if (_cFieldFrame)
-                {
-                  _cFieldFrame.onload = function()
-                  {
-                    if (typeof widgetFrameLoaded !== 'undefined')
-                    {
-                      widgetFrameLoaded(10,
-                      {
-                        "formID": 212661615374051
-                      })
-                    }
-                  };
-                  _cFieldFrame.src = "//data-widgets.jotform.io/signature-pad/?qid=10&ref=" +
-                    encodeURIComponent(window.location.protocol + "//" + window.location.host) + '&ndt=1' + '' + '' +
-                    '&injectCSS=' + encodeURIComponent(window.location.search.indexOf("ndt=1") > -1);
-                  _cFieldFrame.addClassName("custom-field-frame-rendered");
-                }
-              }, 0);
-            </script>
-          </div>
-        </div>
-      </li>
-      <li class="form-line" data-type="control_button" id="id_2">
-        <div id="cid_2" class="form-input-wide" data-layout="full">
-          <div data-align="auto" class="form-buttons-wrapper form-buttons-auto   jsTest-button-wrapperField"><button id="input_2" type="submit" class="form-submit-button submit-button jf-form-buttons jsTest-submitField" data-component="button" data-content="">Submit</button></div>
-        </div>
-      </li>
-      <li style="display:none">Should be Empty: <input type="text" name="website" value="" /></li>
-    </ul>
-  </div>
-  <script>
-    JotForm.showJotFormPowered = "old_footer";
-  </script>
-  <script>
-    JotForm.poweredByText = "Powered by Jotform";
-  </script><input type="hidden" class="simple_spc" id="simple_spc" name="simple_spc" value="212661615374051" />
-  <script type="text/javascript">
-    var all_spc = document.querySelectorAll("form[id='212661615374051'] .si" + "mple" + "_spc");
-    for (var i = 0; i < all_spc.length; i++)
-    {
-      all_spc[i].value = "212661615374051-212661615374051";
+<style type="text/css">
+    @media print {
+        .form-section {
+            display: inline !important
+        }
+
+        .form-pagebreak {
+            display: none !important
+        }
+
+        .form-section-closed {
+            height: auto !important
+        }
+
+        .page-section {
+            position: initial !important
+        }
     }
-  </script>
-</form><script type="text/javascript">JotForm.ownerView=true;</script><script src="https://cdn.jotfor.ms//js/vendor/smoothscroll.min.js?v=3.3.41574"></script>
+</style>
+<link type="text/css" rel="stylesheet"
+    href="https://cdn01.jotfor.ms/themes/CSS/5e6b428acc8c4e222d1beb91.css?v=3.3.41574&themeRevisionID=63e6805f64383509e31513f4" />
+<link type="text/css" rel="stylesheet" href="https://cdn02.jotfor.ms/css/styles/payment/payment_styles.css?3.3.41574" />
+<link type="text/css" rel="stylesheet"
+    href="https://cdn03.jotfor.ms/css/styles/payment/payment_feature.css?3.3.41574" />
+<style type="text/css" id="form-designer-style">
+    /* Injected CSS Code */
+    /*PREFERENCES STYLE*/
+    .form-all {
+        font-family: Inter, sans-serif;
+    }
+
+    .form-label.form-label-auto {
+
+        display: block;
+        float: none;
+        text-align: left;
+        width: 100%;
+
+    }
+
+    .form-line {
+        margin-top: 12px;
+        margin-bottom: 12px;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .form-all {
+        max-width: 752px;
+        width: 100%;
+    }
+
+    .form-label.form-label-left,
+    .form-label.form-label-right,
+    .form-label.form-label-left.form-label-auto,
+    .form-label.form-label-right.form-label-auto {
+        width: 230px;
+    }
+
+    .form-all {
+        font-size: 16px
+    }
+
+    .supernova .form-all,
+    .form-all {
+        background-color: #fff;
+    }
+
+    .form-all {
+        color: #2C3345;
+    }
+
+    .form-header-group .form-header {
+        color: #2C3345;
+    }
+
+    .form-header-group .form-subHeader {
+        color: #2C3345;
+    }
+
+    .form-label-top,
+    .form-label-left,
+    .form-label-right,
+    .form-html,
+    .form-checkbox-item label,
+    .form-radio-item label,
+    span.FITB .qb-checkbox-label,
+    span.FITB .qb-radiobox-label,
+    span.FITB .form-radio label,
+    span.FITB .form-checkbox label,
+    [data-blotid][data-type=checkbox] [data-labelid],
+    [data-blotid][data-type=radiobox] [data-labelid],
+    span.FITB-inptCont[data-type=checkbox] label,
+    span.FITB-inptCont[data-type=radiobox] label {
+        color: #2C3345;
+    }
+
+    .form-sub-label {
+        color: #464d5f;
+    }
+
+    .supernova {
+        background-color: undefined;
+    }
+
+    .supernova body {
+        background: transparent;
+    }
+
+    .form-textbox,
+    .form-textarea,
+    .form-dropdown,
+    .form-radio-other-input,
+    .form-checkbox-other-input,
+    .form-captcha input,
+    .form-spinner input {
+        background-color: undefined;
+    }
+
+    .supernova {
+        background-image: none;
+    }
+
+    #stage {
+        background-image: none;
+    }
+
+    .form-all {
+        background-image: none;
+    }
+
+    .form-all:before {
+        content: none;
+    }
+
+    .form-all {
+        margin-top: 72px;
+    }
+
+    /*PREFERENCES STYLE*/
+    /*__INSPECT_SEPERATOR__*/
+    /* Injected CSS Code */
+</style>
+
+<form class="jotform-form" action="https://submit.jotform.com/submit/212661615374051" method="post"
+    name="form_212661615374051" id="212661615374051" accept-charset="utf-8" autocomplete="on"><input type="hidden"
+        name="formID" value="212661615374051" /><input type="hidden" id="JWTContainer" value="" /><input type="hidden"
+        id="cardinalOrderNumber" value="" />
+    <div role="main" class="form-all">
+        <ul class="form-section page-section">
+            <li id="cid_1" class="form-input-wide" data-type="control_head">
+                <div class="form-header-group  header-large">
+                    <div class="header-text httal htvam">
+                        <h1 id="header_1" class="form-header" data-component="header">QC Checklist</h1>
+                    </div>
+                </div>
+            </li>
+            <li class="form-line jf-required" data-type="control_widget" id="id_18"><label
+                    class="form-label form-label-top form-label-auto" id="label_18" for="input_18"> BUYER NAME<span
+                        class="form-required">*</span> </label>
+                <div id="cid_18" class="form-input-wide jf-required" data-layout="full">
+                    <div data-widget-name="Dynamic Dropdowns" style="width:100%;text-align:Left;overflow-x:auto"
+                        data-component="widget-field"><iframe data-client-id="53201a2d6866be393e000028"
+                            title="Dynamic Dropdowns" frameBorder="0" scrolling="no" allowtransparency="true"
+                            allow="geolocation; microphone; camera; autoplay; encrypted-media; fullscreen"
+                            data-type="iframe" class="custom-field-frame" id="customFieldFrame_18" src=""
+                            style="max-width:400px;border:none;width:100%;height:50px" data-width="400"
+                            data-height="50"></iframe>
+                        <div class="widget-inputs-wrapper">
+                            <input type="hidden" id="input_18" class="form-hidden form-widget widget-required "
+                                name="q18_buyerName" value="" />
+                            <input type="hidden" id="widget_settings_18" class="form-hidden form-widget-settings"
+                                value="%5B%7B%22name%22%3A%22list%22%2C%22value%22%3A%22%5CnHELLO%22%7D%5D"
+                                data-version="2" />
+                        </div>
+                        <script type="text/javascript">
+                            setTimeout(function () {
+                                var _cFieldFrame = document.getElementById("customFieldFrame_18");
+                                if (_cFieldFrame) {
+                                    _cFieldFrame.onload = function () {
+                                        if (typeof widgetFrameLoaded !== 'undefined') {
+                                            widgetFrameLoaded(18,
+                                                {
+                                                    "formID": 212661615374051
+                                                })
+                                        }
+                                    };
+                                    _cFieldFrame.src = "//app-widgets.jotform.io/dynamicDropdowns/?qid=18&ref=" +
+                                        encodeURIComponent(window.location.protocol + "//" + window.location.host) + '' + '' + '' +
+                                        '&injectCSS=' + encodeURIComponent(window.location.search.indexOf("ndt=1") > -1);
+                                    _cFieldFrame.addClassName("custom-field-frame-rendered");
+                                }
+                            }, 0);
+                        </script>
+                    </div>
+                </div>
+            </li>
+            <li class="form-line jf-required" data-type="control_widget" id="id_17"><label
+                    class="form-label form-label-top form-label-auto" id="label_17" for="input_17"> PO NO.<span
+                        class="form-required">*</span> </label>
+                <div id="cid_17" class="form-input-wide jf-required" data-layout="full">
+                    <div data-widget-name="Dynamic Dropdowns" style="width:100%;text-align:Left;overflow-x:auto"
+                        data-component="widget-field"><iframe data-client-id="53201a2d6866be393e000028"
+                            title="Dynamic Dropdowns" frameBorder="0" scrolling="no" allowtransparency="true"
+                            allow="geolocation; microphone; camera; autoplay; encrypted-media; fullscreen"
+                            data-type="iframe" class="custom-field-frame" id="customFieldFrame_17" src=""
+                            style="max-width:400px;border:none;width:100%;height:50px" data-width="400"
+                            data-height="50"></iframe>
+                        <div class="widget-inputs-wrapper"><input type="hidden" id="input_17"
+                                class="form-hidden form-widget widget-required " name="q17_poNo" value="" /><input
+                                type="hidden" id="widget_settings_17" class="form-hidden form-widget-settings"
+                                value="%5B%5D" data-version="2" /></div>
+                        <script type="text/javascript">
+                            setTimeout(function () {
+                                var _cFieldFrame = document.getElementById("customFieldFrame_17");
+                                if (_cFieldFrame) {
+                                    _cFieldFrame.onload = function () {
+                                        if (typeof widgetFrameLoaded !== 'undefined') {
+                                            widgetFrameLoaded(17,
+                                                {
+                                                    "formID": 212661615374051
+                                                })
+                                        }
+                                    };
+                                    _cFieldFrame.src = "//app-widgets.jotform.io/dynamicDropdowns/?qid=17&ref=" +
+                                        encodeURIComponent(window.location.protocol + "//" + window.location.host) + '' + '' + '' +
+                                        '&injectCSS=' + encodeURIComponent(window.location.search.indexOf("ndt=1") > -1);
+                                    _cFieldFrame.addClassName("custom-field-frame-rendered");
+                                }
+                            }, 0);
+                        </script>
+                    </div>
+                </div>
+            </li>
+            <li class="form-line jf-required" data-type="control_widget" id="id_16"><label
+                    class="form-label form-label-top form-label-auto" id="label_16" for="input_16"> STYLE NO.<span
+                        class="form-required">*</span> </label>
+                <div id="cid_16" class="form-input-wide jf-required" data-layout="full">
+                    <div data-widget-name="Dynamic Dropdowns" style="width:100%;text-align:Left;overflow-x:auto"
+                        data-component="widget-field"><iframe data-client-id="53201a2d6866be393e000028"
+                            title="Dynamic Dropdowns" frameBorder="0" scrolling="no" allowtransparency="true"
+                            allow="geolocation; microphone; camera; autoplay; encrypted-media; fullscreen"
+                            data-type="iframe" class="custom-field-frame" id="customFieldFrame_16" src=""
+                            style="max-width:400px;border:none;width:100%;height:50px" data-width="400"
+                            data-height="50"></iframe>
+                        <div class="widget-inputs-wrapper"><input type="hidden" id="input_16"
+                                class="form-hidden form-widget widget-required " name="q16_styleNo" value="" /><input
+                                type="hidden" id="widget_settings_16" class="form-hidden form-widget-settings"
+                                value="%5B%5D" data-version="2" /></div>
+                        <script type="text/javascript">
+                            setTimeout(function () {
+                                var _cFieldFrame = document.getElementById("customFieldFrame_16");
+                                if (_cFieldFrame) {
+                                    _cFieldFrame.onload = function () {
+                                        if (typeof widgetFrameLoaded !== 'undefined') {
+                                            widgetFrameLoaded(16,
+                                                {
+                                                    "formID": 212661615374051
+                                                })
+                                        }
+                                    };
+                                    _cFieldFrame.src = "//app-widgets.jotform.io/dynamicDropdowns/?qid=16&ref=" +
+                                        encodeURIComponent(window.location.protocol + "//" + window.location.host) + '' + '' + '' +
+                                        '&injectCSS=' + encodeURIComponent(window.location.search.indexOf("ndt=1") > -1);
+                                    _cFieldFrame.addClassName("custom-field-frame-rendered");
+                                }
+                            }, 0);
+                        </script>
+                    </div>
+                </div>
+            </li>
+            <li class="form-line" data-type="control_dropdown" id="id_15"><label
+                    class="form-label form-label-top form-label-auto" id="label_15" for="input_15"> Size </label>
+                <div id="cid_15" class="form-input-wide" data-layout="half"> <select class="form-dropdown" id="input_15"
+                        name="q15_size" style="width:310px" data-component="dropdown" aria-label="Size">
+                        <option value="">Please Select</option>
+                        <option value="XS">XS</option>
+                        <option value="S">S</option>
+                        <option value="M">M</option>
+                        <option value="L">L</option>
+                        <option value="XL">XL</option>
+                        <option value="2XL">2XL</option>
+                        <option value="S/M">S/M</option>
+                        <option value="L/XL">L/XL</option>
+                        <option value="1X">1X</option>
+                        <option value="2X">2X</option>
+                        <option value="3X">3X</option>
+                        <option value="4">4</option>
+                        <option value="6">6</option>
+                        <option value="8">8</option>
+                        <option value="10">10</option>
+                        <option value="12">12</option>
+                    </select> </div>
+            </li>
+            <li class="form-line" data-type="control_widget" id="id_14"><label
+                    class="form-label form-label-top form-label-auto" id="label_14" for="input_14"> Measurement </label>
+                <div id="cid_14" class="form-input-wide" data-layout="full">
+                    <div data-widget-name="Spreadsheet" style="width:100%;text-align:Left;overflow-x:auto"
+                        data-component="widget-field"><iframe data-client-id="5321bc1dec233a2e15000006"
+                            title="Spreadsheet" frameBorder="0" scrolling="no" allowtransparency="true"
+                            allow="geolocation; microphone; camera; autoplay; encrypted-media; fullscreen"
+                            data-type="iframe" class="custom-field-frame" id="customFieldFrame_14" src=""
+                            style="max-width:1000px;border:none;width:100%;height:300px" data-width="1000"
+                            data-height="300"></iframe>
+                        <div class="widget-inputs-wrapper"><input type="hidden" id="input_14"
+                                class="form-hidden form-widget  " name="q14_measurement" value="" /><input type="hidden"
+                                id="widget_settings_14" class="form-hidden form-widget-settings"
+                                value="%5B%7B%22name%22%3A%22rowsNumber%22%2C%22value%22%3A%225%22%7D%2C%7B%22name%22%3A%22colsNumber%22%2C%22value%22%3A%225%22%7D%2C%7B%22name%22%3A%22columnNames%22%2C%22value%22%3A%22Measurement%20Type%5CnCM%20%2F%20INCH%5CnACTUAL%5CnREQUIRED%5CnDIFFERENCE%5Cn%22%7D%2C%7B%22name%22%3A%22defaultData%22%2C%22value%22%3A%22A1%20Hps%20to%20length%5CnA2%20Chest%5CnA3%20Waist%5CnA4%20Shoulder%5CnA5%20Sleeve%20length%5CnE1%20%3D%20D1-C1%5CnE2%20%3D%20D2-C2%5CnE3%20%3D%20D3-C3%5CnE4%20%3D%20D4-C4%5CnE5%20%3D%20D5-C5%5Cn%22%7D%5D"
+                                data-version="2" /></div>
+                        <script type="text/javascript">
+                            setTimeout(function () {
+                                var _cFieldFrame = document.getElementById("customFieldFrame_14");
+                                if (_cFieldFrame) {
+                                    _cFieldFrame.onload = function () {
+                                        if (typeof widgetFrameLoaded !== 'undefined') {
+                                            widgetFrameLoaded(14,
+                                                {
+                                                    "formID": 212661615374051
+                                                })
+                                        }
+                                    };
+                                    _cFieldFrame.src = "//app-widgets.jotform.io/spreadsheet/?qid=14&ref=" +
+                                        encodeURIComponent(window.location.protocol + "//" + window.location.host) + '' + '' + '' +
+                                        '&injectCSS=' + encodeURIComponent(window.location.search.indexOf("ndt=1") > -1);
+                                    _cFieldFrame.addClassName("custom-field-frame-rendered");
+                                }
+                            }, 0);
+                        </script>
+                    </div>
+                </div>
+            </li>
+            <li class="form-line" data-type="control_widget" id="id_10"><label
+                    class="form-label form-label-top form-label-auto" id="label_10" for="input_10"> Signature </label>
+                <div id="cid_10" class="form-input-wide" data-layout="full">
+                    <div data-widget-name="Smooth Signature" style="width:100%;text-align:Left;overflow-x:auto"
+                        data-component="widget-field"><iframe data-client-id="529467003477f3512000001f"
+                            title="Smooth Signature" frameBorder="0" scrolling="no" allowtransparency="true"
+                            allow="geolocation; microphone; camera; autoplay; encrypted-media; fullscreen"
+                            data-type="iframe" class="custom-field-frame" id="customFieldFrame_10" src=""
+                            style="max-width:310px;border:none;width:100%;height:114px" data-width="310"
+                            data-height="114"></iframe>
+                        <div class="widget-inputs-wrapper"><input type="hidden" id="input_10"
+                                class="form-hidden form-widget  " name="q10_typeA" value="" /><input type="hidden"
+                                id="widget_settings_10" class="form-hidden form-widget-settings" value="%5B%5D"
+                                data-version="2" /></div>
+                        <script type="text/javascript">
+                            setTimeout(function () {
+                                var _cFieldFrame = document.getElementById("customFieldFrame_10");
+                                if (_cFieldFrame) {
+                                    _cFieldFrame.onload = function () {
+                                        if (typeof widgetFrameLoaded !== 'undefined') {
+                                            widgetFrameLoaded(10,
+                                                {
+                                                    "formID": 212661615374051
+                                                })
+                                        }
+                                    };
+                                    _cFieldFrame.src = "//data-widgets.jotform.io/signature-pad/?qid=10&ref=" +
+                                        encodeURIComponent(window.location.protocol + "//" + window.location.host) + '&ndt=1' + '' + '' +
+                                        '&injectCSS=' + encodeURIComponent(window.location.search.indexOf("ndt=1") > -1);
+                                    _cFieldFrame.addClassName("custom-field-frame-rendered");
+                                }
+                            }, 0);
+                        </script>
+                    </div>
+                </div>
+            </li>
+            <li class="form-line" data-type="control_button" id="id_2">
+                <div id="cid_2" class="form-input-wide" data-layout="full">
+                    <div data-align="auto" class="form-buttons-wrapper form-buttons-auto   jsTest-button-wrapperField">
+                        <button id="input_2" type="submit"
+                            class="form-submit-button submit-button jf-form-buttons jsTest-submitField"
+                            data-component="button" data-content="">Submit</button>
+                    </div>
+                </div>
+            </li>
+            <li style="display:none">Should be Empty: <input type="text" name="website" value="" /></li>
+        </ul>
+    </div>
+    <script>
+        JotForm.showJotFormPowered = "old_footer";
+    </script>
+    <script>
+        JotForm.poweredByText = "Powered by Jotform";
+    </script><input type="hidden" class="simple_spc" id="simple_spc" name="simple_spc" value="212661615374051" />
+    <script type="text/javascript">
+        var all_spc = document.querySelectorAll("form[id='212661615374051'] .si" + "mple" + "_spc");
+        for (var i = 0; i < all_spc.length; i++) {
+            all_spc[i].value = "212661615374051-212661615374051";
+        }
+    </script>
+</form>
+<script type="text/javascript">JotForm.ownerView = true;</script>
+<script src="https://cdn.jotfor.ms//js/vendor/smoothscroll.min.js?v=3.3.41574"></script>
 <script src="https://cdn.jotfor.ms//js/errorNavigation.js?v=3.3.41574"></script>
 
 <script>
     // Make a GET request to the API endpoint
     const url = 'https://script.googleusercontent.com/macros/echo?user_content_key=HXfYilfo2OAEnvjqKFl7AG2PUE6piGwC6XG7PLjFBplSjtY1FAaOMmPelPOeNu47rRyoZTXEyEh3l5P0DPQrtmRtrYtkHU6zm5_BxDlH2jW0nuo2oDemN9CCS2h10ox_1xSncGQajx_ryfhECjZEnLZTnY8i_GPeBQ9q0pqpjH6vMdS91I806EKi7mKo3bqm9Zg3_UGDmnEOIOZ4muWzNbatXkOHh35-IJ2y6azv1k9BHj9MQ4ZJbtz9Jw9Md8uu&lib=M3JvB-j7kj1vt7YA7P0ZYekNgx7jwhV1g'
- 
+
     fetch(url)
         .then(response => response.json())
         .then(options => {
-    const buyerElement = document.getElementById('input_18');
-    options.data.buyer.forEach(option => {
-        const optionElement = document.createElement('option');
-        optionElement.value = option;
-        optionElement.textContent = option;
-        buyerElement.appendChild(optionElement);
-    });
-    
-     const poElement = document.getElementById('input_17');
-    options.data.po.forEach(option => {
-        const optionElement = document.createElement('option');
-        optionElement.value = option;
-        optionElement.textContent = option;
-        poElement.appendChild(optionElement);
-    });
-    
-       const stylesElement = document.getElementById('input_16');
-    options.data.styles.forEach(option => {
-        const optionElement = document.createElement('option');
-        optionElement.value = option;
-        optionElement.textContent = option;
-        stylesElement.appendChild(optionElement);
-    });
+            const buyerElement = document.getElementById('widget_settings_18');
+            options.data.buyer.forEach(option => {
+                const optionElement = document.createElement('option');
+                optionElement.value = option;
+                optionElement.textContent = option;
+                buyerElement.appendChild(optionElement);
+            });
+
+            const poElement = document.getElementById('input_17');
+            options.data.po.forEach(option => {
+                const optionElement = document.createElement('option');
+                optionElement.value = option;
+                optionElement.textContent = option;
+                poElement.appendChild(optionElement);
+            });
+
+            const stylesElement = document.getElementById('input_16');
+            options.data.styles.forEach(option => {
+                const optionElement = document.createElement('option');
+                optionElement.value = option;
+                optionElement.textContent = option;
+                stylesElement.appendChild(optionElement);
+            });
         });
 </script>
